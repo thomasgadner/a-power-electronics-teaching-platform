@@ -1,0 +1,1452 @@
+{
+    "version": "0.1",
+    "components": [
+        {
+            "type": "rect",
+            "label": {
+                "value": "J1",
+                "anchor": "default",
+                "position": "north",
+                "distance": "0.17cm"
+            },
+            "position": {
+                "x": 66.009,
+                "y": -283.616
+            },
+            "size": {
+                "x": 56.693,
+                "y": 75.591
+            }
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "1",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 47.111,
+                "y": -311.962
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "3",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 47.111,
+                "y": -283.616
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "5",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 47.111,
+                "y": -255.269
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "2",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 84.907,
+                "y": -311.962
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "4",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 84.907,
+                "y": -283.616
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "6",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 84.907,
+                "y": -255.269
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "rect",
+            "label": {
+                "value": "P1",
+                "anchor": "default",
+                "position": "north",
+                "distance": "0.17cm"
+            },
+            "position": {
+                "x": 708.888,
+                "y": -321.411
+            },
+            "size": {
+                "x": 56.693,
+                "y": 75.591
+            }
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "1",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 689.99,
+                "y": -349.757
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "3",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 689.99,
+                "y": -321.411
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "5",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 689.99,
+                "y": -293.064
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "2",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 727.786,
+                "y": -349.757
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "4",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 727.786,
+                "y": -321.411
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "6",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 727.786,
+                "y": -293.064
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 406.298,
+                    "y": -274.167
+                },
+                {
+                    "x": 406.298,
+                    "y": -349.758
+                }
+            ],
+            "label": {
+                "value": "N3",
+                "otherSide": true,
+                "distance": "0.12cm"
+            },
+            "id": "american inductor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 415.747,
+                "y": -330.86
+            },
+            "id": "circ"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 406.298,
+                    "y": -189.127
+                },
+                {
+                    "x": 406.298,
+                    "y": -264.718
+                }
+            ],
+            "label": {
+                "value": "N4",
+                "otherSide": true,
+                "distance": "0.12cm"
+            },
+            "id": "american inductor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 415.747,
+                "y": -245.821
+            },
+            "id": "circ"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "T2",
+                "anchor": "default",
+                "position": "northeast",
+                "distance": "0.2cm"
+            },
+            "position": {
+                "x": 368.503,
+                "y": -349.757
+            },
+            "scale": {
+                "x": 0.1,
+                "y": 0.1
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 387.401,
+                    "y": -330.86
+                },
+                {
+                    "x": 387.401,
+                    "y": -208.025
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "--"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 377.952,
+                    "y": -330.86
+                },
+                {
+                    "x": 377.952,
+                    "y": -208.025
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "--"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 141.675,
+                    "y": -349.758
+                },
+                {
+                    "x": 236.125,
+                    "y": -349.758
+                }
+            ],
+            "label": {
+                "value": "SB19",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 169.87,
+                    "y": -226.923
+                },
+                {
+                    "x": 207.666,
+                    "y": -226.923
+                }
+            ],
+            "label": {
+                "value": "SB20",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 444.094,
+                    "y": -349.682
+                },
+                {
+                    "x": 444.094,
+                    "y": -302.362
+                }
+            ],
+            "label": {
+                "value": "SB23",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 529.134,
+                    "y": -264.454
+                },
+                {
+                    "x": 529.134,
+                    "y": -188.939
+                }
+            ],
+            "label": {
+                "value": "SB26",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 141.675,
+                    "y": -311.962
+                },
+                {
+                    "x": 236.088,
+                    "y": -311.962
+                }
+            ],
+            "label": {
+                "value": "L_r",
+                "distance": "0.12cm"
+            },
+            "id": "american inductor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 236.125,
+                    "y": -311.962
+                },
+                {
+                    "x": 236.125,
+                    "y": -226.923
+                }
+            ],
+            "label": {
+                "value": "L_m",
+                "distance": "0.12cm"
+            },
+            "id": "american inductor"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 84.907,
+                    "y": -311.962
+                },
+                {
+                    "x": 141.599,
+                    "y": -311.962
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 236.125,
+                "y": -311.962
+            },
+            "id": "circ"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 236.088,
+                "y": -226.923
+            },
+            "id": "circ"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 358.979,
+                    "y": -264.718
+                },
+                {
+                    "x": 358.979,
+                    "y": -189.127
+                }
+            ],
+            "label": {
+                "value": "N2",
+                "otherSide": true,
+                "distance": "0.12cm"
+            },
+            "id": "american inductor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 349.53,
+                "y": -245.82
+            },
+            "rotation": -180,
+            "id": "circ"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 358.979,
+                    "y": -349.758
+                },
+                {
+                    "x": 358.979,
+                    "y": -274.167
+                }
+            ],
+            "label": {
+                "value": "N1",
+                "otherSide": true,
+                "distance": "0.12cm"
+            },
+            "id": "american inductor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 349.606,
+                "y": -330.86
+            },
+            "rotation": -180,
+            "id": "circ"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 141.599,
+                    "y": -311.962
+                },
+                {
+                    "x": 141.675,
+                    "y": -349.758
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 236.125,
+                    "y": -311.962
+                },
+                {
+                    "x": 236.125,
+                    "y": -349.758
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 236.088,
+                    "y": -349.758
+                },
+                {
+                    "x": 358.979,
+                    "y": -349.758
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 236.088,
+                    "y": -226.923
+                },
+                {
+                    "x": 207.741,
+                    "y": -226.923
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 84.907,
+                    "y": -283.616
+                },
+                {
+                    "x": 141.599,
+                    "y": -283.616
+                },
+                {
+                    "x": 141.599,
+                    "y": -226.923
+                },
+                {
+                    "x": 169.87,
+                    "y": -226.923
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 141.675,
+                "y": -311.962
+            },
+            "id": "circ"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 236.088,
+                "y": -349.758
+            },
+            "id": "circ"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 274.015,
+                    "y": -340.234
+                },
+                {
+                    "x": 274.015,
+                    "y": -302.438
+                }
+            ],
+            "label": {
+                "value": "SB21",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 274.015,
+                    "y": -245.821
+                },
+                {
+                    "x": 330.708,
+                    "y": -245.821
+                }
+            ],
+            "label": {
+                "value": "SB22",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 236.22,
+                    "y": -226.923
+                },
+                {
+                    "x": 236.22,
+                    "y": -189.128
+                },
+                {
+                    "x": 358.979,
+                    "y": -189.127
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 274.015,
+                    "y": -340.309
+                },
+                {
+                    "x": 274.015,
+                    "y": -349.758
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 274.015,
+                "y": -283.616
+            },
+            "id": "circ"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 274.015,
+                "y": -349.758
+            },
+            "id": "circ"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 330.708,
+                    "y": -245.821
+                },
+                {
+                    "x": 330.708,
+                    "y": -264.718
+                },
+                {
+                    "x": 358.979,
+                    "y": -264.718
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                null,
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 274.015,
+                    "y": -245.821
+                },
+                {
+                    "x": 274.015,
+                    "y": -302.438
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 623.924,
+                    "y": -292.913
+                },
+                {
+                    "x": 661.72,
+                    "y": -292.913
+                }
+            ],
+            "label": {
+                "value": "SB29",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "rect",
+            "label": {
+                "value": "P2",
+                "anchor": "default",
+                "position": "north",
+                "distance": "0.17cm"
+            },
+            "position": {
+                "x": 708.661,
+                "y": -217.323
+            },
+            "size": {
+                "x": 56.693,
+                "y": 75.591
+            }
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "1",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 689.763,
+                "y": -245.669
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "3",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 689.763,
+                "y": -217.323
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "5",
+                "anchor": "west",
+                "position": "default",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 689.763,
+                "y": -188.976
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "2",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 727.559,
+                "y": -245.669
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "4",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 727.559,
+                "y": -217.323
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "6",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 727.559,
+                "y": -188.976
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 406.299,
+                    "y": -264.718
+                },
+                {
+                    "x": 444.094,
+                    "y": -264.756
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 444.094,
+                "y": -264.756
+            },
+            "id": "circ"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 358.979,
+                    "y": -274.167
+                },
+                {
+                    "x": 274.015,
+                    "y": -274.167
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 623.773,
+                    "y": -349.758
+                },
+                {
+                    "x": 661.569,
+                    "y": -349.758
+                }
+            ],
+            "label": {
+                "value": "SB27",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 623.924,
+                    "y": -321.411
+                },
+                {
+                    "x": 661.72,
+                    "y": -321.411
+                }
+            ],
+            "label": {
+                "value": "SB28",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 661.644,
+                    "y": -349.758
+                },
+                {
+                    "x": 689.99,
+                    "y": -349.758
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 444.094,
+                "y": -349.606
+            },
+            "id": "circ"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 444.094,
+                "y": -274.016
+            },
+            "id": "jump crossing"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 472.365,
+                    "y": -264.567
+                },
+                {
+                    "x": 510.161,
+                    "y": -264.567
+                }
+            ],
+            "label": {
+                "value": "SB24",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 547.956,
+                    "y": -264.567
+                },
+                {
+                    "x": 585.752,
+                    "y": -264.567
+                }
+            ],
+            "label": {
+                "value": "SB25",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 614.173,
+                    "y": -189.241
+                },
+                {
+                    "x": 651.969,
+                    "y": -189.241
+                }
+            ],
+            "label": {
+                "value": "SB30",
+                "distance": "0.05cm"
+            },
+            "id": "open solder jumper"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 689.991,
+                    "y": -292.913
+                },
+                {
+                    "x": 661.72,
+                    "y": -292.913
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 623.924,
+                    "y": -321.411
+                },
+                {
+                    "x": 604.951,
+                    "y": -321.26
+                },
+                {
+                    "x": 604.951,
+                    "y": -349.606
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 661.72,
+                    "y": -321.411
+                },
+                {
+                    "x": 689.991,
+                    "y": -321.26
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 444.094,
+                    "y": -302.362
+                },
+                {
+                    "x": 444.094,
+                    "y": -279.307
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 444.094,
+                    "y": -268.725
+                },
+                {
+                    "x": 444.094,
+                    "y": -264.718
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 444.094,
+                    "y": -264.567
+                },
+                {
+                    "x": 472.441,
+                    "y": -264.567
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 406.298,
+                    "y": -274.167
+                },
+                {
+                    "x": 438.803,
+                    "y": -274.016
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 449.386,
+                    "y": -274.016
+                },
+                {
+                    "x": 462.992,
+                    "y": -274.016
+                },
+                {
+                    "x": 462.992,
+                    "y": -292.913
+                },
+                {
+                    "x": 529.134,
+                    "y": -292.913
+                },
+                {
+                    "x": 529.134,
+                    "y": -264.567
+                },
+                {
+                    "x": 510.236,
+                    "y": -264.567
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|",
+                "-|",
+                "|-",
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 529.134,
+                "y": -188.939
+            },
+            "id": "circ"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 529.134,
+                "y": -264.454
+            },
+            "id": "circ"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 529.134,
+                    "y": -264.454
+                },
+                {
+                    "x": 548.031,
+                    "y": -264.567
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 651.969,
+                "y": -245.669
+            },
+            "id": "circ"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 604.951,
+                "y": -264.567
+            },
+            "id": "jump crossing"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 623.849,
+                    "y": -292.913
+                },
+                {
+                    "x": 604.951,
+                    "y": -292.913
+                },
+                {
+                    "x": 604.951,
+                    "y": -269.858
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 604.951,
+                    "y": -259.276
+                },
+                {
+                    "x": 604.951,
+                    "y": -188.976
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 585.752,
+                    "y": -264.567
+                },
+                {
+                    "x": 599.66,
+                    "y": -264.567
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 610.243,
+                    "y": -264.567
+                },
+                {
+                    "x": 651.969,
+                    "y": -264.567
+                },
+                {
+                    "x": 651.969,
+                    "y": -189.241
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 406.299,
+                    "y": -189.241
+                },
+                {
+                    "x": 614.173,
+                    "y": -188.976
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 604.951,
+                "y": -188.976
+            },
+            "id": "circ"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 623.773,
+                    "y": -349.758
+                },
+                {
+                    "x": 406.298,
+                    "y": -349.758
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 604.951,
+                "y": -349.606
+            },
+            "id": "circ"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 651.969,
+                    "y": -245.669
+                },
+                {
+                    "x": 689.764,
+                    "y": -245.669
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                null
+            ]
+        }
+    ]
+}

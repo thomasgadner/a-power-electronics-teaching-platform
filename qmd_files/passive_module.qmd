@@ -9,7 +9,7 @@ The passive module is basically a LC- Filter with an inductance and parallel cap
 
 ## Voltage Measurement
 
-The voltage can be measured on the BNC-Connector $J3$. To measure different voltage levels there is a differential aplifier included on the module to get always a measurement voltage in a range of $0-5$V which can be connected to a microcontroller. Following calculation is included to get the right amplification for the measured signal.
+The voltage can be measured on the BNC-Connector $J3$. To measure different voltage levels there is a differential aplifier included on the module to get always a measurement voltage in a range of $0-5\,$V which can be connected to a microcontroller. Following calculation is included to get the right amplification for the measured signal.
 
 ![Differential Amplifier for voltage measurement](Images/lc_opv.svg){#fig-vm-opv width=50%}
 
@@ -27,4 +27,13 @@ To allow flexible adjustment of the gain, the resistors $R1$ and $R3$ are fixed 
 
 ## Current Measurement
 
-The current can be measured on the BNC Connector $J4$. This measurement works with a Hall-Sensor which gives an analog signal between $0$ and $5$V. 
+The voltage for the current measurement can be measured on the BNC Connector $J4$. The current through the inductor $L_{MOD}$ is measured using a Hall-effect sensor that provides an analog output signal in the range of $0$ to $5\,$V. Because the sensor has a relatively high output impedance, the signal is conditioned using a voltage follower circuit. This ensures that the signal is provided with low output impedance and can be forwarded without interference, for example to a microcontroller or an oscilloscope.
+
+
+To calculate the right value for the current measurement in Ampere the measured voltage $V_{out}$ has to be insert in @eq-igain:
+$$
+I = \frac{V_{out} - 2.5\,\text{V}}{0.2\,\text{V/A}}.
+$$ {#eq-igain}
+
+The Hall-effect sensor provides an analog output voltage $V_{out}$ that is approximately $2.5\,$V at zero current. The signal is proportional to the flowing current $I$ with a sensitivity of about $200\,$mV/A at a supply voltage of $5\,$V.
+

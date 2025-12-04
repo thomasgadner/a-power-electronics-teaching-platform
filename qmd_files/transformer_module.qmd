@@ -1,9 +1,11 @@
 ## Transformer Module {#sec-trans}
 
-solder bridges correct?
+The transformer module has three types of possi
 
-![Transformer Flyback & Forward Configuration](Images/tf_flyback.svg)
+![Transformer Flyback & Forward Configuration](Images/tf_flyback_forward.svg)
 
 ![Transformer Push/Pull Configuration](Images/tf_pushpull.svg)
 
 ![Transformer LLC Configuration](Images/tf_llc.svg)
+
+LLC trafo series ER19 
