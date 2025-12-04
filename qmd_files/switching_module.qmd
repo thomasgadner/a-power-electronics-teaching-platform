@@ -1,0 +1,19 @@
+# Switching Module {#sec-hb}
+
+The switching module is essentially a half-bridge consisting of two MOSFETs (high-side and low-side). Alternatively, it can be equipped with diodes instead of MOSFETs for other applications (e.g., a half-bridge rectifier). When using the module with MOSFETs, the solder bridges $SB15$ for the high-side and $SB16$ for the low-side must be closed. This is not required when using diodes.
+
+![Switching Module basic structure](Images/hb_module.svg){#fig-hb}
+
+@fig-hb shows the schematic of the switching module. The first three inputs are directly connected to the active elements. The remaining inputs are passed through and can be routed to the next board using solder bridges as required. The placement of the active elements on this module is as follows: the pad $Q1$ is for the high-side MOSFET, and in series with it there is a footprint for diode $D2$, which can be used to block reverse current through the MOSFET’s body diode. The same applies to the low-side MOSFET on $Q2$ and diode $D4$. If diodes are used, pads $D1$ and $D3$ are available.
+
+The solder bridges $SB1-SB14$ allow the input channel to be connected to the desired output channels. The possible connection topologies are shown in @tbl-combinations.
+
+
+## Mosfet Gate-Driver
+
+
+To switch the MOSFETs $Q1$ and $Q2$ there are two Gate- Driver ICs on the module. One for the high-side MOSFET and one for low-side. Both have two resistors on the output to the gate of the MOSFET. These resistor are configurable.
+
+![Switching Module basic structure](Images/hb_connector.svg){#fig-hb-connector width=50%}
+
+@fig-hb-connector show the connector $TIMx-CHx$ where to connect an external PWM signal to the Gate-Drivers. The Pin $HIGH$ is for the signal to the high-side driver (MOSFET $Q1$) and Pin $LOW$ for the low-side driver (MOSFET $Q2$).

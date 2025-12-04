@@ -1,0 +1,9 @@
+## Transformer Module {#sec-trans}
+
+solder bridges correct?
+
+![Transformer Flyback & Forward Configuration](Images/tf_flyback.svg)
+
+![Transformer Push/Pull Configuration](Images/tf_pushpull.svg)
+
+![Transformer LLC Configuration](Images/tf_llc.svg)

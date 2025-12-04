@@ -1,0 +1,119 @@
+{
+  "system": "Modular Buck Converter",
+  "modules": {
+    "input_module": {
+      "name": "Eingangsmodul",
+      "ports": [
+        { "id": "V1", "type": "voltage_input" },
+        { "id": "V2", "type": "voltage_input" },
+        { "id": "V3", "type": "voltage_input" },
+        { "id": "GND", "type": "ground" },
+        { "id": "VCC", "type": "supply" }
+      ]
+    },
+
+    "half_bridge_module": {
+      "name": "Halbbrueckenmodul",
+      "components": [
+        {
+          "id": "Q1",
+          "type": "NMOS",
+          "position": [-7, 2.23]
+        },
+        {
+          "id": "D1",
+          "type": "diode",
+          "subtype": "empty",
+          "direction": "vertical",
+          "position": [-7, -0.75]
+        }
+      ],
+      "ports": [
+        { "id": "HB_top", "type": "switch_node" },
+        { "id": "HB_mid", "type": "switch_node" },
+        { "id": "HB_bottom", "type": "switch_node" }
+      ]
+    },
+
+    "lc_filter": {
+      "name": "LC-Filtermodul",
+      "components": [
+        {
+          "id": "L1",
+          "type": "inductor",
+          "value": "L",
+          "position": [0, 3]
+        },
+        {
+          "id": "C1",
+          "type": "capacitor",
+          "value": "C",
+          "position": [0, 0]
+        }
+      ],
+      "ports": [
+        { "id": "LC_in_top", "type": "input" },
+        { "id": "LC_in_mid", "type": "input" },
+        { "id": "LC_in_bottom", "type": "input" },
+        { "id": "LC_out_top", "type": "output" },
+        { "id": "LC_out_mid", "type": "output" },
+        { "id": "LC_out_bottom", "type": "output" }
+      ]
+    },
+
+    "output_module": {
+      "name": "Ausgangsmodul",
+      "ports": [
+        { "id": "OUT_V1", "type": "voltage_output" },
+        { "id": "OUT_V2", "type": "voltage_output" },
+        { "id": "OUT_V3", "type": "voltage_output" }
+      ]
+    }
+  },
+
+  "connections": [
+    {
+      "from": "input_module.V1",
+      "to": "half_bridge_module.HB_top"
+    },
+    {
+      "from": "input_module.V2",
+      "to": "half_bridge_module.HB_mid"
+    },
+    {
+      "from": "input_module.GND",
+      "to": "half_bridge_module.HB_bottom"
+    },
+
+    {
+      "from": "half_bridge_module.HB_top",
+      "to": "lc_filter.LC_in_top"
+    },
+    {
+      "from": "half_bridge_module.HB_mid",
+      "to": "lc_filter.LC_in_mid"
+    },
+    {
+      "from": "half_bridge_module.HB_bottom",
+      "to": "lc_filter.LC_in_bottom"
+    },
+
+    {
+      "from": "lc_filter.L1",
+      "to": "lc_filter.C1"
+    },
+
+    {
+      "from": "lc_filter.LC_out_top",
+      "to": "output_module.OUT_V1"
+    },
+    {
+      "from": "lc_filter.LC_out_mid",
+      "to": "output_module.OUT_V2"
+    },
+    {
+      "from": "lc_filter.LC_out_bottom",
+      "to": "output_module.OUT_V3"
+    }
+  ]
+}

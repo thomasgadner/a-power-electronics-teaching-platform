@@ -1,0 +1,49 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: Modular Power Converter Teaching Platform
+  page-footer:
+    left: Modular Power Converter Teaching Platform
+    right: This book was built with <a href="https://quarto.org/">Quarto</a>.
+  author:
+    - name: Thomas Gadner, Christian Moser, Tobias Stummer, Oskar Klöpfer
+      affiliation: "MCI | The Entrepreneurial School" 
+  description: "User manual for the Modular Power Converter Teaching Platform"
+  date: last-modified
+  sidebar:
+    logo: logo.png
+    search: true
+  favicon: logo.png
+  repo-actions: [edit, issue]
+
+
+  chapters:
+    - index.qmd
+    - part: "Modules"
+      chapters:
+        - qmd_files/in_out_module.qmd
+        - qmd_files/switching_module.qmd
+        - qmd_files/passive_module.qmd
+        - qmd_files/transformer_module.qmd
+        - qmd_files/uC_module.qmd
+
+    - part: "Combination"
+      chapters:
+        - qmd_files/combination.qmd
+        - qmd_files/examples.qmd
+    - references.qmd
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles-distribution/refs/heads/master/ieee.csl
+    
+format: 
+  html:
+    number-depth: 1
+    theme: zephyr
+    grid: 
+      sidebar-width: 350px
+
+resources: 
+  - static/
+    

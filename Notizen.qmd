@@ -1,0 +1,22 @@
+# Introduction
+
+This is a book created from markdown and executable code.
+
+See @knuth84 for additional discussion of literate programming.
+
+
+
+https://circuit2tikz.tf.fau.de/designer/
+
+https://www.drawio.com/
+
+
+
+```{python}
+from pdf2image import convert_from_path
+from IPython.display import display
+
+images = convert_from_path("_sim/_fig/capc.pdf", dpi=500)
+display(images[0])  # Only one page
+
+```

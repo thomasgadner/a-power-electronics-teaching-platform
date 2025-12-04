@@ -1,0 +1,14 @@
+*.qopraw
+*.log
+*.raw
+/.quarto/
+_venv/
+docs/
+_book/
+_extensions/
+.vscode/
+index.aux
+index.pdf
+index.tex
+index.toc
+**/*.quarto_ipynb

@@ -1,0 +1,15 @@
+# Modular Power Converter Teaching Platform {.unnumbered}
+
+
+This is a manual to the "Modular Power Converter Teaching Platform" which can be used to create up to 20+ different Converter topologies with a combination of the modules. These modules are separated in Input-, Switching-, Transformer-, Passive-, Microcontroller- and Output- Modul. The following documentation describes the individual parts and how to combine them.
+
+The Modular Power Converter Teaching Platform was designed by Oskar Klöpfer under the supervision of Thomas Gadner in his Bachelor Thesis @BA_kloepfer. Most of the content in this user manual comes from this Bachelor Thesis. A second version of the PCB design was carried out by Tobias Stummer. The manual was written by Christian Moser.
+
+
+## General Overview
+
+@fig-buck_example is an example of the modular setup of a buck converter. Following modules are used for this setup: Input-> Half-bridge -> LC-Filter -> Output.
+
+![Example of a modular Buck Converter](qmd_files/Images/buck_example.JPEG){#fig-buck_example}
+
+Each module is described in the following chapters starting with @sec-in_out. A number of possible combinations of these modules are described in @sec-combination to create different converter topologies. The modules are connected via header pins on top and bottom of the module. The inputs of each module are the called $J1$ and $J2$ and the outputs are called $P1$ and $P2$. Each module has solderbridges to connect the individual parts on the board to get the desired converter topologie.

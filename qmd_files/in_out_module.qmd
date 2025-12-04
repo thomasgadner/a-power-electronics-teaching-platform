@@ -1,0 +1,19 @@
+# Input & Output Module {#sec-in_out}
+
+The input and output module forms the central connection point between the converter and the outside world.
+
+## Input
+
+The input module (@fig-input-module) provides three separate connection channels $V1$,$V2$ and $V3$. For most applications - e.g., DC power supplies or single-phase inverter - two input channels are sufficient. $V3$ is intended for topologies that require three-phase power, such as three-phase rectifiers.
+
+The input module also includes the two terminals $VCC$ and $GND$. These should be connected to a $5V$ power supply that is used by components requiring an external operating voltage, for example the measurement circuits on the passive module or the gate-driver supply on the switching module.
+
+![Input Module Circuit](Images/input_module.svg){#fig-input-module}
+
+## Output
+
+The output module (@fig-output-module) also provides three connection channels like the input module. This module is typically added at the end of the modular built to connect loads. 
+Both modules include an optional mounting area for an electrolytic capacitor ($C_{ELKO}$), which acts as a DC-link capacitor for the input voltage or as a filtering capacitor for the output voltage.
+
+
+![Output Module Circuit](Images/output_module.svg){#fig-output-module}

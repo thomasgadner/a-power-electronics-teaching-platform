@@ -1,0 +1,30 @@
+# Passive Module {#sec-filter}
+
+The passive module is basically a LC- Filter with an inductance and parallel capacitances. For this module only four inputs are necessary. Additionaly it has an output to measure the current through the coil and an output for voltage measurement across the capacitance.
+
+
+![Passive Module basic structure](Images/lc_module.svg){#fig-passive}
+
+@fig-passive shows the basic structure of the passive module. The inductance $L_{MOD}$ is connected between the first and second input. The capacitors $C_{MLCC1-3}$ are in parallel between the second and third input. They are in parallel to increase the capacitance if necessary. As in the other modules there are solderbridges $SB1-SB11$ to connect the output as needed.
+
+## Voltage Measurement
+
+The voltage can be measured on the BNC-Connector $J3$. To measure different voltage levels there is a differential aplifier included on the module to get always a measurement voltage in a range of $0-5$V which can be connected to a microcontroller. Following calculation is included to get the right amplification for the measured signal.
+
+![Differential Amplifier for voltage measurement](Images/lc_opv.svg){#fig-vm-opv width=50%}
+
+@fig-vm-opv shows a differential amplifier. For the real module $V1$ is the second input and $V2$ is the third input. In here the resistances are called $R1-R4$. To find out the designator on the real hardware have a look in the schematic in the Appendix (add ref).
+
+$R1 = R3$ and $R2 = R4$ have to be the same value for a correct amplification. This output $V_{out}$ can be calculated with @eq-vgain:
+
+$$
+V_{\text{out}} = \frac{R_2}{R_1}\,(V_2 - V_1)
+\qquad\text{with}\qquad
+V_{\text{gain}} = \frac{R_2}{R_1}
+$$ {#eq-vgain}
+
+To allow flexible adjustment of the gain, the resistors $R1$ and $R3$ are fixed at $10\,\text{k}\Omega$. The resistors $R2$ and $R4$, however, can be selected according to the desired gain. For example, using $500\,\Omega$ for $R2$ and $R4$ results in a gain $V_{gain} = 0.05$. If resistors of $2.5\,\text{k}\Omega$ are used instead, the gain becomes $0.25$. With $10\,\text{k}\Omega$ resistors, the gain is equal to $1$.
+
+## Current Measurement
+
+The current can be measured on the BNC Connector $J4$. This measurement works with a Hall-Sensor which gives an analog signal between $0$ and $5$V. 
