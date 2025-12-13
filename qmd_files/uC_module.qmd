@@ -1,5 +1,18 @@
-# uC Module {#sec-uc}
+# Control Module {#sec-ctrl}
+
+Module to control the MOSFETs of the switching module. This module is placed separately and is connected to the header pins of the switching module (@sec-hb). It is placed on top of a NUCLEO-F303RE Microcontroller.
+
+![Structure of the Control Module](Images/ctrl_module.svg){#fig-ctrl}
+
+Pins website: https://os.mbed.com/platforms/ST-Nucleo-F303RE/
+
 
 connection svg.
+
+
+
+![Connector for TIM](Images/ctrl_connector.svg){#fig-ctrl_connector width=30%}
+
+
 
 "download this" for timer configuration, examples in plecs Testsgfdsf

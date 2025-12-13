@@ -1,0 +1,104 @@
+{
+    "version": "0.1",
+    "components": [
+        {
+            "type": "rect",
+            "label": {
+                "value": "CH\\,x",
+                "anchor": "default",
+                "position": "south",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 557.48,
+                "y": -245.669
+            },
+            "size": {
+                "x": 56.693,
+                "y": 37.795
+            }
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "P",
+                "anchor": "default",
+                "position": "north",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 538.583,
+                "y": -245.669
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "N",
+                "anchor": "default",
+                "position": "north",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 557.48,
+                "y": -245.669
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 576.378,
+                "y": -245.669
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 548.032,
+                    "y": -236.22
+                },
+                {
+                    "x": 566.929,
+                    "y": -236.22
+                }
+            ],
+            "stroke": {
+                "width": "1.4pt"
+            },
+            "directions": [
+                "--"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 614.174,
+                "y": -245.669
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 576.378,
+                    "y": -245.669
+                },
+                {
+                    "x": 614.174,
+                    "y": -245.669
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        }
+    ]
+}

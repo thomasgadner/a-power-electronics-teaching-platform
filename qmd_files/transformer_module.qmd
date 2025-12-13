@@ -2,10 +2,10 @@
 
 The transformer module has three types of possi
 
-![Transformer Flyback & Forward Configuration](Images/tf_flyback_forward.svg)
+![Transformer Flyback & Forward Configuration](Images/tf_flyback_forward.svg){#fig-flyback}
 
-![Transformer Push/Pull Configuration](Images/tf_pushpull.svg)
+![Transformer Push/Pull Configuration](Images/tf_pushpull.svg){#fig-pushpull}
 
-![Transformer LLC Configuration](Images/tf_llc.svg)
+![Transformer LLC Configuration](Images/tf_llc.svg){#fig-llc_dab}
 
 LLC trafo series ER19 
