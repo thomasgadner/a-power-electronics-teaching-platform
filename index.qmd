@@ -13,3 +13,9 @@ The Modular Power Converter Teaching Platform was designed by Oskar Klöpfer und
 ![Example of a modular Buck Converter](qmd_files/Images/buck_example.JPEG){#fig-buck_example}
 
 Each module is described in the following chapters starting with @sec-in_out. A number of possible combinations of these modules are described in @sec-combination to create different converter topologies. The modules are connected via header pins on top and bottom of the module. The inputs of each module are the called $J1$ and $J2$ and the outputs are called $P1$ and $P2$. Each module has solderbridges to connect the individual parts on the board to get the desired converter topologie.
+
+::: {.callout-important}
+## Important Note
+The maximum input power is limited to $100\,\text{W}$  to cover typical low-voltage applications. The input voltage range is adjustable from $10\,\text{V}$ to $50\,\text{V}$, with lower voltages limiting the transferable power due to the $5\,\text{A}$ input current limit.
+
+:::
