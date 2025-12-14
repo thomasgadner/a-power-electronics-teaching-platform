@@ -1,11 +1,16 @@
 ## Transformer Module {#sec-trans}
 
-The transformer module has three types of possi
+The transformer module has two transformers on it to design different topologies. Footprint $T1$ is for a [flexible Transformer](https://www.we-online.com/en/components/products/WE-FLEX#749196500){target="_blank"} with six windings and a turn ratio of 1:1. This one is used for all kind of switching regulators. E.g. flyback-, forward- and push-pull converter. The topologie for this transformer can be seen in @fig-flyback and @fig-pushpull. In both scetches is the same transformer, it is split up in two for readability.
 
+Footprint $T2$ on the other hand is a transformer for high frequency purposes like LLc- converter or Dual active bridge. As can be seen in @fig-llc_dab it has also additional inductances possible in series or parallel to the input-side of the transformer. The used transformer is [WE-PLN Planar Transformer ER19/4.8/15](https://www.we-online.com/en/components/products/WE-PLN#/articles/WE-PLN-ER19_4_8_15){target="_blank"}.
+
+## Configurations
 ![Transformer Flyback & Forward Configuration](Images/tf_flyback_forward.svg){#fig-flyback}
 
 ![Transformer Push/Pull Configuration](Images/tf_pushpull.svg){#fig-pushpull}
 
+
+
 ![Transformer LLC Configuration](Images/tf_llc.svg){#fig-llc_dab}
 
-LLC trafo series ER19 
+<!-- add new SB's of LLC trafo in combination table -->
