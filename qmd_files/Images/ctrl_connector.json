@@ -2,17 +2,75 @@
     "version": "0.1",
     "components": [
         {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 538.583,
+                    "y": -226.772
+                },
+                {
+                    "x": 604.724,
+                    "y": -226.772
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 538.583,
+                    "y": -245.669
+                },
+                {
+                    "x": 604.724,
+                    "y": -245.669
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 538.583,
+                    "y": -264.567
+                },
+                {
+                    "x": 604.724,
+                    "y": -264.567
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
             "type": "rect",
             "label": {
                 "value": "CH\\,x",
                 "anchor": "default",
-                "position": "south",
+                "position": "north",
                 "distance": "0.12cm"
             },
             "position": {
-                "x": 557.48,
+                "x": 604.724,
                 "y": -245.669
             },
+            "rotation": 90,
             "size": {
                 "x": 56.693,
                 "y": 37.795
@@ -20,50 +78,41 @@
         },
         {
             "type": "node",
-            "label": {
-                "value": "P",
-                "anchor": "default",
-                "position": "north",
-                "distance": "0.12cm"
-            },
             "position": {
-                "x": 538.583,
-                "y": -245.669
+                "x": 604.724,
+                "y": -226.772
             },
-            "id": "ocirc"
-        },
-        {
-            "type": "node",
-            "label": {
-                "value": "N",
-                "anchor": "default",
-                "position": "north",
-                "distance": "0.12cm"
-            },
-            "position": {
-                "x": 557.48,
-                "y": -245.669
-            },
+            "rotation": 90,
             "id": "ocirc"
         },
         {
             "type": "node",
             "position": {
-                "x": 576.378,
+                "x": 604.724,
                 "y": -245.669
             },
+            "rotation": 90,
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 604.724,
+                "y": -264.567
+            },
+            "rotation": 90,
             "id": "ocirc"
         },
         {
             "type": "wire",
             "points": [
                 {
-                    "x": 548.032,
-                    "y": -236.22
+                    "x": 614.173,
+                    "y": -236.221
                 },
                 {
-                    "x": 566.929,
-                    "y": -236.22
+                    "x": 614.173,
+                    "y": -255.118
                 }
             ],
             "stroke": {
@@ -76,29 +125,43 @@
         {
             "type": "node",
             "position": {
-                "x": 614.174,
-                "y": -245.669
+                "x": 538.583,
+                "y": -264.567
+            },
+            "rotation": 90,
+            "scale": {
+                "x": 1,
+                "y": -1
             },
             "id": "ground"
         },
         {
-            "type": "wire",
-            "points": [
-                {
-                    "x": 576.378,
-                    "y": -245.669
-                },
-                {
-                    "x": 614.174,
-                    "y": -245.669
-                }
-            ],
-            "stroke": {
-                "width": "0.4pt"
+            "type": "node",
+            "label": {
+                "value": "HIGH",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
             },
-            "directions": [
-                "-|"
-            ]
+            "position": {
+                "x": 538.583,
+                "y": -226.772
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "label": {
+                "value": "LOW",
+                "anchor": "default",
+                "position": "west",
+                "distance": "0.12cm"
+            },
+            "position": {
+                "x": 538.583,
+                "y": -245.669
+            },
+            "id": "ocirc"
         }
     ]
 }

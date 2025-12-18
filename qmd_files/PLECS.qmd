@@ -1,0 +1,27 @@
+# Plecs Documentation {#sec-plecs}
+
+PLECS (Piecewise Linear Electrical Circuit Simulation) is a simulation software used for modeling and analyzing power electronic systems and their control. It is optimized for fast, time-domain simulation of switched systems by using a piecewise-linear approach. PLECS can automatically generate C code from models for real-time embedded deployment for STM32 microcontrollers.
+
+
+## Plecs Installation Guide
+
+The following PDF gives instruction how to install Plecs correctly.
+
+::: {.content-visible when-format="html"}
+<iframe
+  src="Files/Installation%20Guide%20for%20Plecs.pdf"
+  width="100%"
+  height="900px"
+  style="border:none;">
+</iframe>
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\includepdf[pages=-]{Files/Installation Guide for Plecs.pdf}
+:::
+
+Additionaly to the RT Box Target Support Package also the STM32 Support Package has to be installed to use the code generation for STM32 microcontrolles. For this start Plecs and go to $File\,> Plecs\,Preferences\,> Coder$. When correctly installed it should look like @fig-plecs-coder. The Target Support Packages Path can be choosen freely.
+
+![Plecs Support Packages](Images/plecs_coder.png){#fig-plecs-coder width=80%}
+

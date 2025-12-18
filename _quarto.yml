@@ -28,11 +28,15 @@ book:
         - qmd_files/passive_module.qmd
         - qmd_files/transformer_module.qmd
         - qmd_files/uC_module.qmd
+        
 
     - part: "Combination"
       chapters:
         - qmd_files/combination.qmd
         - qmd_files/examples.qmd
+    - part: "Control"
+      chapters:
+        - qmd_files/PLECS.qmd
     - references.qmd
 bibliography: references.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles-distribution/refs/heads/master/ieee.csl

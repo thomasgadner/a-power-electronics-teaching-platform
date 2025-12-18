@@ -38,7 +38,7 @@
         {
             "type": "rect",
             "label": {
-                "value": "NUCLEO-F303RE",
+                "value": "NUCLEO-G474RE",
                 "anchor": "default",
                 "position": "north",
                 "distance": "0.12cm"
