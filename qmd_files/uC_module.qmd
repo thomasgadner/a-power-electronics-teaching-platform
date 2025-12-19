@@ -1,17 +1,17 @@
 # Control Module {#sec-ctrl}
 
-Module to control the MOSFETs of the switching module. This module is placed separately and is connected to the header pins of the switching module (@sec-hb). It is placed on top of a NUCLEO-G474RE Microcontroller.
+This module controls the MOSFETs of the Switching Module. It is placed separately to the modular parts on top of a NUCLEO-G474RE Microcontroller and is connected to the header pins of the Switching Module (@sec-hb).
 
 @fig-ctrl shows how the pins of the board are connected to the NUCLEO. It has five Analog channels via BNC Connector and three separate timers with three channels each. Where the digital outputs $TIM\,1$ and $TIM\,8$ are standard timer $HRTIM\,1$ stands for high resolution timer. Additionaly there is the $USER$ and $RESET$ button on the board to use. To see the detailed NUCLEO pinout visit this page: [Nucleo Pinout](https://os.mbed.com/platforms/ST-Nucleo-G474RE/){target="_blank"} 
 
-![Structure of the Control Module](Images/ctrl_module.svg){#fig-ctrl width=80%}
+![Control Module Connection Diagram](Images/ctrl_module.svg){#fig-ctrl width=80%}
 
 
-@fig-ctrl_connector is the view from above on a timer channel connector. This is just to showcase how to connect the pins to the switching module.
+@fig-ctrl_connector is the view from above on a timer channel connector. This is just to showcase how to connect $HIGH$ and $LOW$ to the connector on the Switching Module mentioned in @fig-fig-hb-connector.
 
-![Connector for TIM](Images/ctrl_connector.svg){#fig-ctrl_connector width=30%}
+![Connector for a digital output](Images/ctrl_connector.svg){#fig-ctrl_connector width=30%}
 
 ## Code Generation
 
-To generate the code for the timer on the NUCLEO board the code generation in PLECS is used. All information to PLECS can be found in @sec-plecs.
+To generate the code for the timer on the NUCLEO board the code generation in PLECS is used. Some informations to PLECS can be found in @sec-plecs.
 

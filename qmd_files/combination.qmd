@@ -1,20 +1,16 @@
 
 # Combination of the Modules {#sec-combination}
 
-<!-- add DAB, check each combination, check links -->
-
-
-
-This chapter shows the possible combination of modules for different topologies. Each topology is linked to the wikipedia page of the converter. The Table can be read as follow:
+This chapter shows the possible combination of modules for different topologies. Each topology is linked to the wikipedia page or similar information source of the converter. @tbl-combinations can be read as follow:
 
 - The modules for each converter are in correct order from left to right
 - Each module has the designator of the connected solderbridges attached
 - Abbreviations in the table:
-    - In = Input Module
-    - Sw = Switching Module
-    - P = Passive Module
-    - T = Transformer Module
-- An Output Module is added at the end of each topology
+    - $In$ = Input Module
+    - $Sw$ = Switching Module
+    - $P$ = Passive Module
+    - $T$ = Transformer Module
+- An Output Module is added at the end of each topology and is not listed in the table
 
 <style>
 /* Wrapper: no vertical scrolling */
@@ -57,7 +53,7 @@ This chapter shows the possible combination of modules for different topologies.
 
 
 ::: {#tbl-combinations}
-Combinations of the modules for different converters.
+Combinations of the modules for different topologies
 <div class="sticky-header-table-wrapper">
   <table class="sticky-header-table">
     <thead>
@@ -127,7 +123,7 @@ Combinations of the modules for different converters.
         <td>In: 2, 4, 5</td><td>Sw: 1, 8, 10, 14 (15, 16)</td><td>Sw: 1, 8, 10 (15, 16)</td><td>Sw: 1, 8 (15, 16)</td><td>P: 3, 7</td><td></td><td></td><td></td>
       </tr>
       <tr>
-        <td><a href="https://en.wikipedia.org/wiki/H-bridge" target="_blank">Half‑Bridge Inverter</a></td>
+        <td><a href="https://www.electricaltechnology.org/2020/06/half-h-bridge-inverter-its-modes-of-operation-with-waveforms.html" target="_blank">Half‑Bridge Inverter</a></td>
         <td>In: 2, 4</td><td>P: 5, 7, 11</td><td>P: 5, 8, 9</td><td>Sw: 3, 10, 15, 16</td><td></td><td></td><td></td><td></td>
       </tr>
       <tr>
@@ -135,7 +131,7 @@ Combinations of the modules for different converters.
         <td>In: 1, 3</td><td>Sw: 1, 6, 8, 15, 16</td><td>Sw: 3, 10, 15, 16</td><td></td><td></td><td></td><td></td><td></td>
       </tr>
       <tr>
-        <td><a href="https://en.wikipedia.org/wiki/Inverter_(electricity)#Three-phase_inverters" target="_blank">Three‑Phase Full‑Bridge Inverter</a></td>
+        <td><a href="https://www.monolithicpower.com/en/learning/mpscholar/power-electronics/dc-ac-converters/three-phase-inverters?srsltid=AfmBOoqvyQuJv3DJg_ZYXAQYwxmzIAzPB3LnUCk0BgOASnibY4D9nzxg" target="_blank">Three‑Phase Full‑Bridge Inverter</a></td>
         <td>In: 1, 3</td><td>Sw: 1, 6, 8, 15, 16</td><td>Sw: 1, 6, 8, 12, 15, 16</td><td>Sw: 3, 10, 13, 15, 16</td><td></td><td></td><td></td><td></td>
       </tr>
       <tr>
@@ -151,11 +147,11 @@ Combinations of the modules for different converters.
         <td>In: 1, 3</td><td>Sw: 1, 6, 8, 15, 16</td><td>Sw: 3, 10, 15, 16</td><td>T: 20, 22, 9, 10, 11, 12, 13, 14</td><td>Sw: 1, 8, 10, 15, 16</td><td>Sw: 1, 8, 15, 16</td><td>P: 3, 7</td><td></td>
       </tr>
       <tr>
-        <td><a href="https://de.wikipedia.org/wiki/Resonanzwandler" target="_blank">LLC Converter Full-Bridge</a></td>
+        <td><a href="https://www.infineon.com/assets/row/public/documents/24/42/infineon-design-example-resonant-llc-converter-operation-and-design-applicationnotes-en.pdf" target="_blank">LLC Converter Full-Bridge</a></td>
         <td>In: 1, 3</td><td>Sw: 1, 6, 8, 15, 16</td><td>Sw: 6, 11, 15, 16</td><td>P: 3, 10</td><td>T: 20, 22, 24, 28, 30</td><td>Sw: 1, 8, 10 (15, 16)</td><td>Sw: 2, 8 (15, 16)</td><td>P: 3, 7</td>
       </tr>
       <tr>
-        <td><a href="https://de.wikipedia.org/wiki/Resonanzwandler" target="_blank">LLC Converter Full-Wave</a></td>
+        <td><a href="https://www.infineon.com/assets/row/public/documents/24/42/infineon-design-example-resonant-llc-converter-operation-and-design-applicationnotes-en.pdf" target="_blank">LLC Converter Full-Wave</a></td>
         <td>In: 1, 3</td><td>Sw: 1, 6, 8, 15, 16</td><td>Sw: 6, 11, 15, 16</td><td>P: 3, 10</td><td>T: 20, 21, 24, 25, 27, 29</td><td>Sw: 4, 11, 17</td><td>P: 3, 7</td><td></td>
       </tr>
       <tr>

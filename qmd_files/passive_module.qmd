@@ -1,39 +1,37 @@
 # Passive Module {#sec-filter}
 
-The passive module is basically a LC- Filter with an inductance and parallel capacitances. For this module only four inputs are necessary. Additionaly it has an output to measure the current through the coil and an output for voltage measurement across the capacitance.
+The Passive Module is basically a LC- Filter with an inductance and parallel capacitances. For this module only four inputs are necessary. Input 4 on $J2$ goes straight through. Additionaly it has an output to measure the current through the coil and an output for voltage measurement across the capacitance.
 
 
-![Passive Module basic structure](Images/lc_module.svg){#fig-passive}
+![Passive Module connection diagram](Images/lc_module.svg){#fig-passive}
 
-@fig-passive shows the basic structure of the passive module. The inductance $L_{MOD}$ is connected between the first and second input. The capacitors $C_{MLCC1-3}$ are in parallel between the second and third input. They are in parallel to increase the capacitance if necessary. As in the other modules there are solderbridges $SB1-SB11$ to connect the output as needed.
+@fig-passive shows the basic structure of the Passive Module. The inductance $L_{MOD}$ is connected between the first and second input. The capacitors $C_{MLCC1-3}$ are in parallel between the second and third input. They are in parallel to increase the capacitance if necessary. As in the other modules there are solderbridges $SB1-SB11$ to connect the output as needed.
 
 ## Voltage Measurement
 
-The voltage can be measured on the BNC-Connector $J3$. To measure different voltage levels there is a differential aplifier included on the module to get always a measurement voltage in a range of $0-5\,$V which can be connected to a microcontroller. Following calculation is included to get the right amplification for the measured signal.
+The voltage can be measured on the BNC-Connector $J3$. To measure different voltage levels there is a differential aplifier included on the module to get always a measurement voltage in a range of $0-5\,\text{V}$ which can be connected to a microcontroller. Following calculation is included to get the right amplification for the measured signal.
 
 ![Differential Amplifier for voltage measurement](Images/lc_opv.svg){#fig-vm-opv width=50%}
 
-@fig-vm-opv shows a differential amplifier. For the real module $V1$ is the second input and $V2$ is the third input. In here the resistances are called $R1-R4$. To find out the designator on the real hardware have a look in the schematic in the Appendix (add ref).
-
-$R1 = R3$ and $R2 = R4$ have to be the same value for a correct amplification. This output $V_{out}$ can be calculated with @eq-vgain:
+@fig-vm-opv shows a differential amplifier. For the real module $V1$ is pin 4 on $J1$ and $V2$ is pin 6 on $J1$ as can be seen in @fig-passive. In this manual the resistances are called $R1-R4$. $R1 = R3$ and $R2 = R4$ have to be the same value for a correct amplification. This output $V_{out}$ can be calculated with @eq-vgain:
 
 $$
 V_{\text{out}} = \frac{R_2}{R_1}\,(V_2 - V_1)
 \qquad\text{with}\qquad
-V_{\text{gain}} = \frac{R_2}{R_1}
+{\text{Gain}}, (A) = \frac{R_2}{R_1}
 $$ {#eq-vgain}
 
-To allow flexible adjustment of the gain, the resistors $R1$ and $R3$ are fixed at $10\,\text{k}\Omega$. The resistors $R2$ and $R4$, however, can be selected according to the desired gain. For example, using $500\,\Omega$ for $R2$ and $R4$ results in a gain $V_{gain} = 0.05$. If resistors of $2.5\,\text{k}\Omega$ are used instead, the gain becomes $0.25$. With $10\,\text{k}\Omega$ resistors, the gain is equal to $1$.
+To allow flexible adjustment of the gain, the resistors $R1$ and $R3$ are fixed at $10\,\text{k}\Omega$. The resistors $R2$ and $R4$, however, can be selected according to the desired gain. For example, using $500\,\Omega$ for $R2$ and $R4$ results in a gain $A = 0.05$. If resistors of $2.5\,\text{k}\Omega$ are used instead, the gain becomes $0.25$. With $10\,\text{k}\Omega$ resistors $A = 1$.
 
 ## Current Measurement
 
-The voltage for the current measurement can be measured on the BNC Connector $J4$. The current through the inductor $L_{MOD}$ is measured using a Hall-effect sensor that provides an analog output signal in the range of $0$ to $5\,$V. Because the sensor has a relatively high output impedance, the signal is conditioned using a voltage follower circuit. This ensures that the signal is provided with low output impedance and can be forwarded without interference, for example to a microcontroller or an oscilloscope.
+The voltage for the current measurement can be measured on the BNC Connector $J4$. The current through the inductor $L_{MOD}$ is measured using a Hall-effect sensor that provides an analog output signal in the range of $0$ to $5\,\text{V}$. Because the sensor has a relatively high output impedance, the signal is conditioned using a voltage follower circuit. This ensures that the signal is provided with low output impedance and can be forwarded without interference, for example to a microcontroller or an oscilloscope.
 
 
-To calculate the right value for the current measurement in Ampere the measured voltage $V_{out}$ has to be insert in @eq-igain:
+To calculate the right value for the current measurement in Ampere the measured voltage $V_{out}$ has to be inserted in @eq-igain:
 $$
 I = \frac{V_{out} - 2.5\,\text{V}}{0.2\,\text{V/A}}.
 $$ {#eq-igain}
 
-The Hall-effect sensor provides an analog output voltage $V_{out}$ that is approximately $2.5\,$V at zero current. The signal is proportional to the flowing current $I$ with a sensitivity of about $200\,$mV/A at a supply voltage of $5\,$V.
+The Hall-effect sensor provides an analog output voltage $V_{out}$ that is approximately $2.5\,$V at zero current. The signal is proportional to the flowing current $I$ with a sensitivity of about $200\,\text{mV/A}$ at a supply voltage of $5\,\text{V}$.
 

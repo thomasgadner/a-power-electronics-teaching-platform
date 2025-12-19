@@ -1,19 +1,19 @@
 # Input & Output Module {#sec-in_out}
 
-The input and output module forms the central connection point between the converter and the outside world.
+The Input and Output Module forms the central connection point between the converter and the outside world.
 
-## Input
+## Input Module
 
-The input module (@fig-input-module) provides three separate connection channels $V1$,$V2$ and $V3$. For most applications - e.g., DC power supplies or single-phase inverter - two input channels are sufficient. $V3$ is intended for topologies that require three-phase power, such as three-phase rectifiers.
+The Input Module (@fig-input-module) provides three separate connection channels $V1$,$V2$ and $V3$. For most applications - e.g., DC power supplies or single-phase inverter - two input channels are sufficient. $V3$ is intended for topologies that require three-phase power, such as three-phase rectifiers.
 
-The input module also includes the two terminals $VCC$ and $GND$. These should be connected to a $5V$ power supply that is used by components requiring an external operating voltage, for example the measurement circuits on the passive module or the gate-driver supply on the switching module.
+The Input Module also includes the two terminals $VCC$ and $GND$. These should be connected to a $5\,\text{V}$ power supply that is used by components requiring an external operating voltage, for example the measurement circuits on the Passive Module or the gate-driver supply on the Switching Module.
 
-![Input Module Circuit](Images/input_module.svg){#fig-input-module}
+![Input Module connection diagram](Images/input_module.svg){#fig-input-module}
 
-## Output
+## Output Module
 
-The output module (@fig-output-module) also provides three connection channels like the input module. This module is typically added at the end of the modular built to connect loads. 
-Both modules include an optional mounting area for an electrolytic capacitor ($C_{ELKO}$), which acts as a DC-link capacitor for the input voltage or as a filtering capacitor for the output voltage.
+The Output Module (@fig-output-module) also provides three connection channels like the Input Module. This module is typically added at the end of the modular built to connect loads. 
+Both modules include an optional mounting area for an electrolytic capacitor ($C_{ELKO}$), which acts as a DC-link capacitor for the input voltage or as a filtering capacitor for the output voltage. The component for this footprint can be found on [Würth Elektronics](https://www.we-online.com/en/components/products/pbs/capacitors/aluminium_electrolytic_capacitors/aluminum_electrolytic_v-chip_smt_capacitors){target="_blank"}
 
 
-![Output Module Circuit](Images/output_module.svg){#fig-output-module}
+![Output Module connection diagram](Images/output_module.svg){#fig-output-module}

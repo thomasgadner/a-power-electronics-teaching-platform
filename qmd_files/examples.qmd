@@ -1,4 +1,4 @@
-# Example Setup of a modular DAB {#sec-example}
+# Example: Setup of a modular DAB {#sec-example}
 
 This section shows how to get the modular build of a desired converter topology step by step. This example shows how to connect the modules for a Dual Active Bridge Converter (DAB).
 
@@ -8,18 +8,18 @@ At first get the topology for the desired converter. @fig-ex-dab shows the topol
 
 ![Topology of a Dual Active Bridge ](Images/dab.svg){#fig-ex-dab}
 
-## Step 2: Split into Modules
+## Step 2: Split Topology into Modules
 
 Have a look at the needed parts and split up the topology to build it with the possible modules as shown in @fig-ex-dab-parts. The parts on each module can be seen in @sec-in_out to @sec-ctrl.
 
 ![DAB in module parts ](Images/dab_mod.svg){#fig-ex-dab-parts}
 
-The Input and Output modules are needed for all combinations. For this case four of the switching modules are needed because each module can have up to two MOSFETs. Inbetween a Transformer module is needed. This one also has the needed inductance included. Before the Output module a Passive Module is implemented where capacitors are in parallel to get a higher value for the capacitance. This also can be done with the $C_{ELKO}$ of the Output module if the capacitance and voltage output is in range of the possible capacitors.
-Additionaly the Passive module can be used for measurement of current and voltage. If needed also a Passive Module can be added inbetween for measurement purpose (Left out in this case).
+The Input and Output Modules are needed for all combinations. In this case four of the Switching Modules are needed because each module can have up to two MOSFETs. Inbetween a Transformer Module is needed. This one also has the inductance $L$ included. Before the Output Module a Passive Module is implemented where capacitors are in parallel to get a higher value for the capacitance $C_2$. This also can be done with the $C_{ELKO}$ of the Output Module if the capacitance and voltage output is in range of the possible capacitors.
+Additionaly the Passive Module can be used for measurement of current and voltage. If needed also a Passive Module can be added inbetween for measurement purpose (Left out in this case).
 
-## Step 3: Choose the path through the Modules
+## Step 3: Choose the Path through the Modules
 
-Now the Solder bridges for each module has to be choosen for the desired connections. For this each module is looked at separately and how it is necessary to connect at both sides. The following modules are choosen out of @fig-ex-dab-parts and are worked through from left to right starting with Switching Module 1. The Input and Output Module comes at the end because they are adjusted to the modules next to it.
+Now the Solder bridges for each module has to be choosen for the desired connections. For this step each module is looked at separately and how it is necessary to connect at both sides. The following modules are choosen out of @fig-ex-dab-parts and are worked through from left to right starting with Switching Module 1. The Input and Output Module comes at the end because they are adjusted to the modules next to it.
 
 ::: {.callout-important}
 ## Note
@@ -34,7 +34,7 @@ In Switching Module 2 (@fig-ex-dab-sw2) the Outputs on $P1$ of SW Module 1 comes
 
 ![Connections in Switching Module 2 ](Images/ex_sw_2.svg){#fig-ex-dab-sw2}
 
-For the Transformer Module (@fig-ex-dab-tf) the inputs are choosen the way to have the Inductance $L_r$ in series and both windings of the transformer on primary side and secondary side in series. It would also be possible to connect only $V2$ and/or $V4$ of the transformer. Depending on the turn ratio. On the secondary side <span style="color:red;">red</span> is needed as midpoint for SW Module 3 and <span style="color:blue;">blue</span> goes again through to SW Module 4 so the first pin of $P2$ is choosen.
+For the Transformer Module (@fig-ex-dab-tf) the inputs are choosen the way to have the Inductance $L_r$ in series and both windings of the transformer on primary side and secondary side in series. It would also be possible to connect only $N2$ and/or $N4$ of the transformer. Depending on the turn ratio. On the secondary side <span style="color:red;">red</span> is needed as midpoint for SW Module 3 and <span style="color:blue;">blue</span> goes again through to SW Module 4 so the first pin of $P2$ is choosen.
 
 
 ![Connections in Transformer Module ](Images/ex_tf.svg){#fig-ex-dab-tf}
@@ -43,7 +43,7 @@ For SW Module 3 (@fig-ex-dab-sw3) it's the same. <span style="color:blue;">Blue<
 
 ![Connections in Switching Module 3 ](Images/ex_sw_3.svg){#fig-ex-dab-sw3}
 
-In SW Module 4 (@fig-ex-dab-sw4) <span style="color:blue;">blue</span> ends at the midpoint. <span style="color:red;">Red</span> and <span style="color:green;">green</span> are in this case on Pin 3 and 5 to get to the capacitance on the following Passive Module. 
+In SW Module 4 (@fig-ex-dab-sw4) <span style="color:blue;">blue</span> ends at the midpoint. <span style="color:red;">Red</span> and <span style="color:green;">green</span> are in this case on Pin 3 and 5 of $P1$ to get to the capacitance on the following Passive Module. 
 
 ![Connections in Switching Module 4 ](Images/ex_sw_4.svg){#fig-ex-dab-sw4}
 
@@ -51,11 +51,12 @@ In the Passive Module (@fig-ex-dab-f) the lines goes through to Pin 1 and 3 of $
 
 ![Connections in Passive Module](Images/ex_f.svg){#fig-ex-dab-f}
 
-Finally the Input and Output Modules are added (@fig-ex-dab-in-out). For the Input is to mention that $VCC$ and $GND$ has to be connected to $5\,\text{V}$. This supply is fed through to each Module and is used as power supply for the gate drivers of the MOSFETs and for the Measurement circuit on the Passive Module. The Output Module comes last where a load and measurements can be connected.
+Finally the Input and Output Modules are added (@fig-ex-dab-in-out). For the Input is to mention that $VCC$ and $GND$ has to be connected to $5\,\text{V}$. This supply is fed through to each Module and is used as power supply for the gate drivers of the MOSFETs and for the Measurement circuit on the Passive Module. The Output Module has no solderbridges and comes last where a load and measurements can be connected.
 
 ![Connections in Input and Output Module](Images/ex_in_out.svg){#fig-ex-dab-in-out}
 
-With this workthrough following Solderbridges in @tbl-ex-sb have to be connected to get a working Dual Active Bridge Converter:
+With this workthrough,
+ following Solderbridges in @tbl-ex-sb have to be connected to get a working Dual Active Bridge Converter:
 
 ::: {#tbl-ex-sb}
 Table: Overview of the Modules with connected Solderbridges
@@ -65,7 +66,7 @@ Table: Overview of the Modules with connected Solderbridges
 | Input | 1,3 |
 | Switching 1 | 1,6,8,15,16 |
 | Switching 2 | 4,9,15,16 |
-| Transformer | 22,24,28,30 |
+| Transformer | 20,22,24,28,30 |
 | Switching 3 | 1,8,10,15,16 |
 | Switching 4 | 2,8,15,16 |
 | Passive | 3,7 |
